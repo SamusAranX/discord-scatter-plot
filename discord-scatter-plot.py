@@ -105,7 +105,7 @@ def main(args: argparse.Namespace):
 
 	time_axis.set_label("Time of Day")
 	date_axis.set_label("Date")
-	plt.title(f"When does {user_name} post on Discord? ({user_timezone_name})")
+	plt.title(f"When did {user_name} post on Discord? ({user_timezone_name})")
 
 	print("rendering png…")
 	plt.savefig(os.path.join(archive_dir, "out.png"), bbox_inches="tight", pad_inches=0.3, dpi=300)
